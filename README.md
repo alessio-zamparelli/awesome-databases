@@ -30,7 +30,7 @@ This is a list of database systems grouped by typology and classified by maturit
 
 ## Relational
 
-A relational database [(RDBMS)](https://en.wikipedia.org/wiki/Relational_database_management_system) is a (most commonly digital) database based on the relational model of data, as proposed by E. F. Codd in 1970.[1] A system used to maintain relational databases is a relational database management system (RDBMS). Many relational database systems are equipped with the option of using SQL (Structured Query Language) for querying and updating the database.
+A relational database [(RDBMS)](https://en.wikipedia.org/wiki/Relational_database_management_system) is a (most commonly digital) database based on the relational model of data, as proposed by E. F. Codd in 1970. A system used to maintain relational databases is a relational database management system (RDBMS). Many relational database systems are equipped with the option of using SQL (Structured Query Language) for querying and updating the database.
 
 ### Online Transaction Processing (OLTP)
 
@@ -92,6 +92,7 @@ A relational database [(RDBMS)](https://en.wikipedia.org/wiki/Relational_databas
   A high-performance analytical database system
   ([code](https://github.com/duckdb/duckdb))
   `MIT`
+  ![GitHub Repo stars](https://img.shields.io/github/stars/duckdb/duckdb)
 
 - [SQLite](https://sqlite.org)
   A C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine
@@ -106,6 +107,7 @@ A relational database [(RDBMS)](https://en.wikipedia.org/wiki/Relational_databas
   Very fast, open source, JDBC API Embedded and server modes; in-memory databases Browser based Console application Small footprint
   ([code](https://github.com/h2database/h2database))
   `EPL` `modified MPL`
+  ![GitHub Repo stars](https://img.shields.io/github/stars/h2database/h2database)
 
 ---
 
