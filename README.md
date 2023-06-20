@@ -16,9 +16,12 @@ This is a list of database systems grouped by typology and classified by maturit
 - [Awesome-Databases](#awesome-databases)
   - [Table of contents](#table-of-contents)
   - [Relational](#relational)
-    - [RDBMS](#rdbms)
+    - [RDBMS | OLTP](#rdbms--oltp)
+    - [RDBMS | OLTP](#rdbms--oltp-1)
     - [Embedded](#embedded)
+    - [TimeSeries](#timeseries)
   - [List of Licenses](#list-of-licenses)
+  - [Legenda](#legenda)
   - [Contributing](#contributing)
   - [Authors](#authors)
   - [License](#license)
@@ -27,90 +30,114 @@ This is a list of database systems grouped by typology and classified by maturit
 
 ## Relational
 
-### RDBMS
+### RDBMS | OLTP
 
-<!-- **[`^        back to top        ^`](#awesome-databases)** -->
+**[`^back to top^`](#awesome-databases)**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-A relational database [(RDBMS)](https://en.wikipedia.org/wiki/Relational_database_management_system) is a (most commonly digital) database based on the relational model of data, as proposed by E. F. Codd in 1970.[1] A system used to maintain relational databases is a relational database management system (RDBMS). Many relational database systems are equipped with the option of using SQL (Structured Query Language) for querying and updating the database.[2]
+> A relational database [(RDBMS)](https://en.wikipedia.org/wiki/Relational_database_management_system) is a (most commonly digital) database based on the relational model of data, as proposed by E. F. Codd in 1970.[1] A system used to maintain relational databases is a relational database management system (RDBMS). Many relational database systems are equipped with the option of using SQL (Structured Query Language) for querying and updating the database.
 
-- [CockroachDB](https://en.wikipedia.org/wiki/CockroachDB) - `BSL` `CCL` `MIT` `BSD`
-- [Firebird](<https://en.wikipedia.org/wiki/Firebird_(database_server)>) - `IPL[11]` `IDPL[12]`
-- [H2](<https://en.wikipedia.org/wiki/H2_(DBMS)>) - `EPL` `modified MPL`
-- [IBM Db2](https://en.wikipedia.org/wiki/IBM_Db2) - `Proprietary`
-- [MariaDB](https://en.wikipedia.org/wiki/MariaDB) - `GPL-2.0`
-- [Microsoft SQL Server](https://en.wikipedia.org/wiki/Microsoft_SQL_Server) - `Proprietary`
+- [Oracle DB](https://www.oracle.com/database)
+  It is a database commonly used for running online transaction processing (OLTP), data warehousing (DW) and mixed (OLTP & DW) database workloads.
+  `Proprietary`
+
+- [PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL) - `Postgres License`
+
+- [IBM Db2](https://www.ibm.com/products/db2-database)
+  Cloud-native database built to power low latency transactions and real-time analytics at scale
+  `Proprietary`
+
+- [MariaDB](https://mariadb.org/)
+  The open source relational database
+  ([code](https://github.com/MariaDB/server))
+  `GPL-2.0`
+
+- [Microsoft SQL Server](https://www.microsoft.com/sql-server) - `Proprietary`
 - [MonetDB](https://en.wikipedia.org/wiki/MonetDB) - `MPL-2.0`
 - [MySQL](https://en.wikipedia.org/wiki/MySQL) - `GPL-2.0` `Proprietary`
-- [NuoDB](https://en.wikipedia.org/wiki/NuoDB) - `Proprietary`
-- [OpenEdge](https://en.wikipedia.org/wiki/OpenEdge_Database) - `Proprietary`
-- [Oracle DB](https://en.wikipedia.org/wiki/Oracle_Database) - `Proprietary`
 - [Percona Server for MySQL](https://en.wikipedia.org/wiki/Percona_Server) - `GPL-2.0`
-- [PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL) - `Postgres License`
-- [SQL Anywhere](https://en.wikipedia.org/wiki/SQL_Anywhere) - `Proprietary`
-- [Superbase NG](https://en.wikipedia.org/wiki/Superbase_database) - `Proprietary`
 - [TiDB](https://en.wikipedia.org/wiki/TiDB) - `Apache-2.0`
 - [YugabyteDB](https://en.wikipedia.org/wiki/YugabyteDB) - `Apache-2.0`
+
+- [CockroachDB](https://www.cockroachlabs.com/)
+  Distributed SQL database
+  ([code](https://github.com/cockroachdb/cockroach))
+  `BSL` `CCL` `MIT` `BSD`
+  ![Cloud Only](https://img.shields.io/badge/☁-8A2BE2)
+  ![GitHub Repo stars](https://img.shields.io/github/stars/cockroachdb/cockroach)
+
+---
+
+### RDBMS | OLTP
+
+- [Clickhouse](https://clickhouse.com)
+  ([code](https://github.com/ClickHouse/ClickHouse))
+  `Apache-2.0`
+
+- [Teradata](http://www.teradata.com)
 
 ---
 
 ### Embedded
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+**[`^back to top^`](#awesome-databases)**
 
-- [DuckDB](https://duckdb.org/) - DuckDB is a high-performance analytical database system - ([code](https://github.com/duckdb/duckdb)) `MIT`
-- [SQLite](https://en.wikipedia.org/wiki/SQLite) SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine ([code](https://sqlite.org/src)) `Public domain`
-- [Apache Derby](https://db.apache.org/derby/) an open source relational database implemented entirely in Java - `Apache-2.0`
+- [DuckDB](https://duckdb.org/)
+  A high-performance analytical database system
+  ([code](https://github.com/duckdb/duckdb))
+  `MIT`
+
+- [SQLite](https://sqlite.org)
+  A C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine
+  ([code](https://sqlite.org/src))
+  `Public domain`
+
+- [Apache Derby](https://db.apache.org/derby/)
+  An open source relational database implemented entirely in Java
+  `Apache-2.0`
+
+- [H2](https://h2database.com/)
+  Very fast, open source, JDBC API Embedded and server modes; in-memory databases Browser based Console application Small footprint
+  ([code](https://github.com/h2database/h2database))
+  `EPL` `modified MPL`
+
+---
+
+### TimeSeries
+
+**[`^back to top^`](#awesome-databases)**
+
+- [TimescaleDB](http://www.timescale.com)
+  ([code](https://github.com/timescale/timescaledb))
+
+- [InfluxDB](https://www.influxdata.com)
+
+- [Victoria Metrics](https://victoriametrics.com)
+  ([code](https://github.com/VictoriaMetrics/VictoriaMetrics))
+
+- [QuestDB](https://questdb.io)
+  Columnar time-series database with high performance ingestion and SQL analytics you know and love from QuestDB open source, now on the cloud.
+  ([code](https://github.com/questdb/questdb))
 
 ---
 
 ## List of Licenses
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^back to top^`](#awesome-databases)**
 
-- `0BSD` - [BSD Zero-Clause Licence](https://spdx.org/licenses/0BSD.html)
-- `AAL` - [Attribution Assurance License](https://spdx.org/licenses/AAL.html)
-- `AGPL-3.0` - [GNU Affero General Public License 3.0](https://spdx.org/licenses/AGPL-3.0.html)
 - `Apache-2.0` - [Apache, Version 2.0](https://spdx.org/licenses/Apache-2.0.html)
-- `APSL-2.0` - [Apple Public Source License, Version 2.0](https://spdx.org/licenses/APSL-2.0.html)
-- `Artistic-2.0` - [Artistic License Version 2.0](https://spdx.org/licenses/Artistic-2.0.html)
-- `Beerware` - [Beerware License](https://spdx.org/licenses/Beerware.html)
-- `BSD-2-Clause` - [BSD 2-clause "Simplified"](https://spdx.org/licenses/BSD-2-Clause.html)
-- `BSD-2-Clause-FreeBSD` - [BSD 2-Clause FreeBSD License](https://spdx.org/licenses/BSD-2-Clause-FreeBSD.html)
-- `BSD-3-Clause` - [BSD 3-Clause "New" or "Revised"](https://spdx.org/licenses/BSD-3-Clause.html)
-- `BSD-3-Clause-Attribution` - [BSD with attribution](https://spdx.org/licenses/BSD-3-Clause-Attribution.html)
-- `BSD-4-Clause` - [BSD 4-clause "Original"](https://spdx.org/licenses/BSD-4-Clause.html)
-- `CC-BY-SA-3.0` - [Creative Commons Attribution-ShareAlike 3.0 License](https://spdx.org/licenses/CC-BY-SA-3.0.html)
-- `CC-BY-SA-4.0` - [Creative Commons Attribution-ShareAlike 4.0 License](https://spdx.org/licenses/CC-BY-SA-4.0.html)
-- `CC0-1.0` - [Public Domain/Creative Common Zero 1.0](https://spdx.org/licenses/CC0-1.0.html)
-- `CDDL-1.0` - [Common Development and Distribution License](https://spdx.org/licenses/CDDL-1.0.html)
-- `CECILL-B` - [CEA CNRS INRIA Logiciel Libre](https://spdx.org/licenses/CECILL-B.html)
-- `CPAL-1.0` - [Common Public Attribution License Version 1.0](https://spdx.org/licenses/CPAL-1.0.html)
-- `ECL-2.0` - [Educational Community License, Version 2.0](https://spdx.org/licenses/ECL-2.0.html)
-- `EPL-1.0` - [Eclipse Public License, Version 1.0](https://spdx.org/licenses/EPL-1.0.html)
-- `EPL-2.0` - [Eclipse Public License, Version 2.0](https://spdx.org/licenses/EPL-2.0.html)
-- `EUPL-1.2` - [European Union Public License 1.2](https://spdx.org/licenses/EUPL-1.2.html)
-- `GPL-1.0` - [GNU General Public License 1.0](https://spdx.org/licenses/GPL-1.0.html)
 - `GPL-2.0` - [GNU General Public License 2.0](https://spdx.org/licenses/GPL-2.0.html)
 - `GPL-3.0` - [GNU General Public License 3.0](https://spdx.org/licenses/GPL-3.0.html)
-- `IPL-1.0` - [IBM Public License](https://spdx.org/licenses/IPL-1.0.html)
-- `ISC` - [Internet Systems Consortium License](https://spdx.org/licenses/ISC.html)
-- `LIL-1.0` - [The Lil License v1](https://www.lillicense.org/v1.html)
-- `LGPL-2.1` - [Lesser General Public License 2.1](https://spdx.org/licenses/LGPL-2.1.html)
-- `LGPL-3.0` - [Lesser General Public License 3.0](https://spdx.org/licenses/LGPL-3.0.html)
 - `MIT` - [MIT License](https://spdx.org/licenses/MIT.html)
-- `MPL-1.1` - [Mozilla Public License Version 1.1](https://spdx.org/licenses/MPL-1.1.html)
-- `MPL-2.0` - [Mozilla Public License](https://spdx.org/licenses/MPL-2.0.html)
-- `OSL-3.0` - [Open Software License 3.0](https://spdx.org/licenses/OSL-3.0.html)
-- `Sendmail` - [Sendmail License](https://spdx.org/licenses/Sendmail.html)
-- `Ruby` - [Ruby License](https://spdx.org/licenses/Ruby.html)
-- `Unlicense` - [The Unlicense](https://spdx.org/licenses/Unlicense.html)
-- `WTFPL` - [Do What the Fuck You Want to Public License](https://spdx.org/licenses/WTFPL.html)
-- `Zlib` - [Zlib/libpng License](https://spdx.org/licenses/Zlib.html)
-- `ZPL-2.0` - [Zope Public License 2.0](https://spdx.org/licenses/ZPL-2.0.html)
 
 ---
+
+## Legenda
+
+- ☁ = cloud only
+
+--
 
 ## Contributing
 
