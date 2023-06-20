@@ -16,8 +16,8 @@ This is a list of database systems grouped by typology and classified by maturit
 - [Awesome-Databases](#awesome-databases)
   - [Table of contents](#table-of-contents)
   - [Relational](#relational)
-    - [RDBMS | OLTP](#rdbms--oltp)
-    - [RDBMS | OLTP](#rdbms--oltp-1)
+    - [Online Transaction Processing (OLTP)](#online-transaction-processing-oltp)
+    - [Online Analytical Processing (OLAP)](#online-analytical-processing-olap)
     - [Embedded](#embedded)
     - [TimeSeries](#timeseries)
   - [List of Licenses](#list-of-licenses)
@@ -30,13 +30,13 @@ This is a list of database systems grouped by typology and classified by maturit
 
 ## Relational
 
-### RDBMS | OLTP
+A relational database [(RDBMS)](https://en.wikipedia.org/wiki/Relational_database_management_system) is a (most commonly digital) database based on the relational model of data, as proposed by E. F. Codd in 1970.[1] A system used to maintain relational databases is a relational database management system (RDBMS). Many relational database systems are equipped with the option of using SQL (Structured Query Language) for querying and updating the database.
+
+### Online Transaction Processing (OLTP)
 
 **[`^back to top^`](#awesome-databases)**
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-> A relational database [(RDBMS)](https://en.wikipedia.org/wiki/Relational_database_management_system) is a (most commonly digital) database based on the relational model of data, as proposed by E. F. Codd in 1970.[1] A system used to maintain relational databases is a relational database management system (RDBMS). Many relational database systems are equipped with the option of using SQL (Structured Query Language) for querying and updating the database.
 
 - [Oracle DB](https://www.oracle.com/database)
   It is a database commonly used for running online transaction processing (OLTP), data warehousing (DW) and mixed (OLTP & DW) database workloads.
@@ -52,6 +52,7 @@ This is a list of database systems grouped by typology and classified by maturit
   The open source relational database
   ([code](https://github.com/MariaDB/server))
   `GPL-2.0`
+  ![GitHub Repo stars](https://img.shields.io/github/stars/MariaDB/server)
 
 - [Microsoft SQL Server](https://www.microsoft.com/sql-server) - `Proprietary`
 - [MonetDB](https://en.wikipedia.org/wiki/MonetDB) - `MPL-2.0`
@@ -69,13 +70,17 @@ This is a list of database systems grouped by typology and classified by maturit
 
 ---
 
-### RDBMS | OLTP
+### Online Analytical Processing (OLAP)
 
-- [Clickhouse](https://clickhouse.com)
+**[`^back to top^`](#awesome-databases)**
+
+- [ClickHouse](https://clickhouse.com)
   ([code](https://github.com/ClickHouse/ClickHouse))
   `Apache-2.0`
+  ![GitHub Repo stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse)
 
 - [Teradata](http://www.teradata.com)
+  `Proprietary`
 
 ---
 
@@ -135,7 +140,7 @@ This is a list of database systems grouped by typology and classified by maturit
 
 ## Legenda
 
-- ☁ = cloud only
+- ![Cloud Only](https://img.shields.io/badge/☁-8A2BE2) = cloud only
 
 --
 
